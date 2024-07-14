@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 function ButtonComponent() {
-    const [ViewMore, setViewMore] = useState('Prikazi vise informacija o proizvodima');
-    const [About, setAbout] = useState('Saznajte više o nama');
-    const [Info, setInfo] = useState('Prikaži više informacija o našim uslugama');
+    const [viewMore, setViewMore] = useState('Prikazi vise informacija o proizvodima');
+    const [about, setAbout] = useState('Saznajte više o nama');
+    const [info, setInfo] = useState('Prikaži više informacija o našim uslugama');
 
     function handleViewMore(){
       setViewMore('Naši proizvodi su pažljivo odabrani kako bi vam pružili najbolji kvalitet po pristupačnim cenama. Svi proizvodi prolaze stroge kontrole kvaliteta i dolaze sa garancijom zadovoljstva. Izaberite najbolje za sebe i uživajte u našoj ponudi!');
@@ -19,17 +19,17 @@ function ButtonComponent() {
   return (
     <div>
         <div>
-        <h2 className='font-bold'>{ViewMore}</h2>
+        <h2 className='font-bold'>{viewMore}</h2>
         <button className='bg-blue-500 textqueen text-white font-bold px-[20px] py-[10px] rounded-lg mt-5 mb-10' onClick={handleViewMore}>View More</button>
         </div>
 
         <div>
-            <h2 className='font-bold'>{About}</h2>
+            <h2 className='font-bold'>{about}</h2>
             <button className='bg-blue-500 textqueen text-white font-bold px-[20px] py-[10px] rounded-lg mt-5 mb-10' onClick={handleAbout}>View More</button>
         </div>
 
         <div>
-        <h2 className='font-bold'>{Info}</h2>
+        <h2 className='font-bold'>{info}</h2>
         <button className='bg-blue-500 textqueen text-white font-bold px-[20px] py-[10px] rounded-lg mt-5' onClick={handleInfo}>View More</button>
         </div>
     </div>
